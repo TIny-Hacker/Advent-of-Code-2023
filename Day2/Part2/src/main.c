@@ -82,14 +82,13 @@ int main(void) {
             }
 
             currentChar = advance(currentChar) + 1;
-
-            gfx_ZeroScreen();
-            drawStats(minRed, minGreen, minBlue, total, true);
-            drawStats(minRed, minGreen, minBlue, total, false);
-            gfx_BlitBuffer();
         }
 
         total += minRed * minGreen * minBlue;
+        gfx_ZeroScreen();
+        drawStats(minRed, minGreen, minBlue, total, true);
+        drawStats(minRed, minGreen, minBlue, total, false);
+        gfx_BlitBuffer();
     }
 
     gfx_SetTextFGColor(9);

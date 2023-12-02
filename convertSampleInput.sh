@@ -14,7 +14,7 @@ rm input
 
 echo "Converting output to 8xv..."
 
-convbin -j bin -k 8xv -i input.txt -o Input.8xv -n Input # Convert to appvar
+convbin -j bin -k 8xv -i input.txt -o SampleInput.8xv -n Input # Convert to appvar
 
 echo "Restoring input..."
 
