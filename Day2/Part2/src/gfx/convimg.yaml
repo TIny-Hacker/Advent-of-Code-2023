@@ -1,0 +1,21 @@
+palettes:
+  - name: palette
+    fixed-entries:
+      - color: {index: 0, hex: "#161831"} # Background
+      - color: {index: 1, hex: "#FFFFFF"} # Transparent (white)
+      - color: {index: 2, hex: "#FF3855"} # Red
+      - color: {index: 3, hex: "#9F2A3A"} # Red shadow
+      - color: {index: 4, hex: "#269A67"} # Green
+      - color: {index: 5, hex: "#253737"} # Green shadow
+      - color: {index: 6, hex: "#1E4DC5"} # Blue
+      - color: {index: 7, hex: "#182C5E"} # Blue shadow
+      - color: {index: 8, hex: "#30E632"} # Text
+      - color: {index: 9, hex: "#0E471A"} # Text shadow
+
+
+outputs:
+  - type: c
+    include-file: gfx.h
+    palettes:
+      - palette
+    const: true
