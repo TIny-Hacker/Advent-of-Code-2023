@@ -21,7 +21,7 @@ echo "Restoring input..."
 tr '\0' '\n' < input.txt > input # Restore readable input
 mv input input.txt
 
-if [[ ! -f "Input.8xv" ]] # Ensure the files were created
+if [[ ! -f "SampleInput.8xv" ]] # Ensure the files were created
 then
     echo "Something went wrong."
     exit 1
